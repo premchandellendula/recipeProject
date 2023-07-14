@@ -5,9 +5,12 @@
 }
 
 .container{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow: none;
+    background-color: #ffffff;
+    background-image: linear-gradient(62deg, #ffffff 1%, #c0bcc1 36%, #ffffff 100%);
+
 }
 
 .nav-container{
@@ -33,7 +36,7 @@ nav{
     list-style: none;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -50,4 +53,102 @@ a{
 #nav-items{
     display: flex;
     gap: 30px;
+}
+
+.content-box{
+    width: 70%;
+    margin: auto;
+    /* border: 0.5px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 1.7rem;
+    box-shadow: 1px 1px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-box{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s linear 0ss;
+}
+
+.right-box img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 0.6s linear 0s;
+}
+
+.right-box:hover{
+    transform: scale(1.1);
+}
+
+.left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-box h2{
+    font-size: 1.5rem;
+}
+
+.ing-box{
+    font-size: 1.2rem;
+}
+
+.recipe-box{
+    font-size: 1.1rem;
+}
+
+.right-box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 34, 34, 0.713);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.right-box:hover .overlay{
+    opacity: 1;
+}
+
+.right-box .overlay span{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-box{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+}
+
+.footer-box p{
+    color: azure;
+    font-size: 1.5rem;
 }
